@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html leng='pt-AO'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="icon.png" rel="icon" type="image/png" />
+	<title>FCA-UJES</title>
+	<style type="text/css">
+		@font-face {
+			font-family: "Montserrat"; 
+			src: url("Montserrat-Regular.ttf");
+		}
+
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font: normal 12pt "Montserrat";
+			background-color: #caffdb;
+		}
+		section {
+			width: 300px;
+			margin: 15vh auto;
+			text-align: center;
+		}
+		section .msg {
+			margin: 8px 0 5px;
+			color: green;
+		}
+		section .alert {
+			color: red;
+			background-color: #ffd3d3;
+			padding: 10px 25px;
+			margin-top: 10px;
+			border-radius: 5px;
+			cursor: none;
+		}
+		section .alert:hover {
+			color: #666;
+			background-color: #ccc;
+		}
+
+		.margin {
+			width: 100px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.lds-ellipsis {
+		  display: inline-block;
+		  position: relative;
+		  width: 80px;
+		  height: 80px;
+		}
+		.lds-ellipsis div {
+		  position: absolute;
+		  top: 33px;
+		  width: 13px;
+		  height: 13px;
+		  border-radius: 50%;
+		  background: green;
+		  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+		}
+		.lds-ellipsis div:nth-child(1) {
+		  left: 8px;
+		  animation: lds-ellipsis1 0.6s infinite;
+		}
+		.lds-ellipsis div:nth-child(2) {
+		  left: 8px;
+		  animation: lds-ellipsis2 0.6s infinite;
+		}
+		.lds-ellipsis div:nth-child(3) {
+		  left: 32px;
+		  animation: lds-ellipsis2 0.6s infinite;
+		}
+		.lds-ellipsis div:nth-child(4) {
+		  left: 56px;
+		  animation: lds-ellipsis3 0.6s infinite;
+		}
+		@keyframes lds-ellipsis1 {
+		  0% {
+		    transform: scale(0);
+		  }
+		  100% {
+		    transform: scale(1);
+		  }
+		}
+		@keyframes lds-ellipsis3 {
+		  0% {
+		    transform: scale(1);
+		  }
+		  100% {
+		    transform: scale(0);
+		  }
+		}
+		@keyframes lds-ellipsis2 {
+		  0% {
+		    transform: translate(0, 0);
+		  }
+		  100% {
+		    transform: translate(24px, 0);
+		  }
+		}
+	</style>
+</head>
+<body>
+
+	<section>
+		<img src="logo_fca_wifi_prof.png" alt="Logo da FCA-UJES">
+		
+		<!-- <p class="msg">Bem vindo a intranet do campus</p> -->
+
+		<p class="alert">Em desenvolvimento...</p>
+
+		<div class="margin">
+			<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+		</div>
+	</section>
+
+</body>
+</html>
